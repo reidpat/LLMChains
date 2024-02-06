@@ -1,0 +1,24 @@
+{
+    "input": "Long COVID continues to puzzle healthcare experts worldwide, as thousands report persistent symptoms weeks to months after recovering from the initial infection. Common long-lasting symptoms include fatigue, shortness of breath, cognitive disturbances, and fluctuating heart rates. This phenomenon is not only a medical challenge but also impacts the daily lives of sufferers. Recent studies emphasize the importance of a holistic approach to managing these symptoms, including both medical interventions and lifestyle adjustments. Experts suggest that gradual increase in physical activity, mindfulness exercises, and dietary changes can play a crucial role in coping with long COVID. However, they caution against overexertion, as it can exacerbate symptoms.",
+    "tasks": [
+      {
+        "type": "parallel",
+        "prompts": [
+          {
+            "type": "combination",
+            "prompts": [
+              { "system": "Summarize the article into concise bullet points." },
+              { "system": "Generate a list of relevant hashtags for the article." }
+            ]
+          },
+          {
+            "type": "series",
+            "prompts": [
+              { "system": "Translate the article content into behavioral guidelines for long COVID sufferers." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

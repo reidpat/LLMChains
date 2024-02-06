@@ -77,12 +77,6 @@ async function handleSeries(prompts, inputText) {
     return result;
 }
 
-
-async function handlePrompt(prompt, results){
-    let res = await makeOpenAIRequest(prompt, results);
-    return(res.choices[0].message.content)
-}
-
 async function makeApiRequest(prompt, input){
     console.log(prompt, input);
     let res =  await makeOpenAIRequest(prompt, input)
